@@ -104,7 +104,7 @@ If you are dissatisfied with how we have handled your personal data, you have th
 
 ## Children
 
-Seenit is not directed at children under 13, and we do not knowingly collect personal data from children under 13. If you believe a child has provided us with personal data, please contact [help@mydus.co.uk](mailto:help@mydus.co.uk) and we will delete it.
+Seenit is intended for users aged 17 and over and is not directed at children. We do not knowingly collect personal data from anyone under the age of 17. If you believe a child has provided us with personal data, please contact [help@mydus.co.uk](mailto:help@mydus.co.uk) and we will delete it.
 
 ## Changes to this policy
 

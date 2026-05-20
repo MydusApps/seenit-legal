@@ -22,7 +22,7 @@ permalink: /terms/
 
 2.1  Seenit is a social application that lets you log films and television shows you have watched and would recommend, share those logs with people you follow on Seenit, and discover who in your network has watched the same titles. The Service does not include ratings, written reviews, or watchlists.
 
-2.2  By using the Service, you warrant that you are at least 13 years old. If you are under the age of majority in your jurisdiction, you confirm that your parent or legal guardian has reviewed and agreed to these Terms on your behalf.
+2.2  By using the Service, you warrant that you are at least 17 years old. If you are under the age of majority in your jurisdiction, you confirm that your parent or legal guardian has reviewed and agreed to these Terms on your behalf.
 
 2.3  Film and TV metadata (titles, posters, release years, overviews, genres) is provided by The Movie Database (TMDB). Seenit uses the TMDB API but is not endorsed or certified by TMDB. TMDB metadata remains the property of TMDB and its licensors.
 
