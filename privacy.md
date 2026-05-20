@@ -30,9 +30,8 @@ All personal information that you provide to us must be true, complete and accur
 ### Information automatically collected
 
 - **Push-notification data** — when you grant push permission, we store an Expo push token associated with your account so we can deliver notifications to your device. You can revoke push permission at any time in your device settings.
-- **Usage data** — we collect limited information about how and when you use the Service so that we can maintain its security and improve it, including which screens you visit and which features you use.
-- **Device data** — we collect device information such as operating system, device model, language preference, and a partial IP address. This is used for diagnostics, abuse prevention, and crash reporting.
-- **Crash and error reports** — when the app crashes or encounters a runtime error, we collect a stack trace and limited contextual information (device model, OS version, app version) via Sentry to help us diagnose and fix bugs.
+- **Server request metadata** — when the Seenit app talks to our backend (Supabase), the network request necessarily carries your IP address, your user-agent string, and the time of the request. Our backend retains this in operational logs for a limited period to operate the Service securely (abuse prevention, rate limiting, and diagnostics). We do not use this data to build a behavioural profile of you, and we do not run any product analytics, screen-tracking, or session-replay tooling.
+- **Crash and error reports** — when the app crashes or encounters a runtime error, we send a crash report to Sentry containing a stack trace and limited contextual information (device model, operating-system version, app version). We have disabled Sentry’s IP-address and session-replay features so these reports do not include screen recordings or your network address. Sentry only receives data when something goes wrong; in normal use, nothing is sent.
 
 ## How we use your data
 
@@ -45,7 +44,7 @@ We use the information we collect or receive for the following purposes:
 - **To protect our business and our users.** We may use your information as part of our efforts to keep the Service safe and secure, including for abuse prevention, rate limiting, and content moderation. We are legally and contractually obliged to ensure the security of the Service.
 - **To enforce our terms and policies** in order to protect the Service and its users.
 - **To comply with legal and regulatory requirements**, including responding to lawful requests from public authorities.
-- **To improve the Service generally,** including through aggregated analytics and crash reporting. Where we use this information we aim to do so in aggregated or anonymised form so it is not associated with you individually.
+- **To improve the Service generally,** primarily by reviewing crash and error reports. We do not currently run any product-analytics tooling that tracks individual user behaviour. If we introduce aggregated, non-identifying analytics in future we will update this Policy before doing so.
 
 ## Consent
 
@@ -77,7 +76,7 @@ Some of our data processors (notably Supabase, Expo, and Sentry) may process per
 
 We will only keep your personal information for as long as is necessary for the purposes set out in this Policy, unless a longer retention period is required or permitted by law. When you delete your account, your personal data is removed from our active systems as described above and from backups within 30 days.
 
-We may convert your personal data into anonymous aggregated information that we use indefinitely for statistical and product-improvement purposes. Once aggregated in this way it is no longer personal data.
+Where we do derive aggregated, non-identifying information from operational logs or crash data, we may retain that aggregated information indefinitely for statistical and product-improvement purposes. Once aggregated in this way it is no longer personal data.
 
 ## Keeping your personal information secure
 
