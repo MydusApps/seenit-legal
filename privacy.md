@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Seenit Privacy Policy
 
-**Last updated: 20 May 2026**
+**Last updated: 26 May 2026**
 
 ## Introduction
 
@@ -30,7 +30,8 @@ All personal information that you provide to us must be true, complete and accur
 ### Information automatically collected
 
 - **Push-notification data** — when you grant push permission, we store an Expo push token associated with your account so we can deliver notifications to your device. You can revoke push permission at any time in your device settings.
-- **Server request metadata** — when the Seenit app talks to our backend (Supabase), the network request necessarily carries your IP address, your user-agent string, and the time of the request. Our backend retains this in operational logs for a limited period to operate the Service securely (abuse prevention, rate limiting, and diagnostics). We do not use this data to build a behavioural profile of you, and we do not run any product analytics, screen-tracking, or session-replay tooling.
+- **Server request metadata** — when the Seenit app talks to our backend (Supabase), the network request necessarily carries your IP address, your user-agent string, and the time of the request. Our backend retains this in operational logs for a limited period to operate the Service securely (abuse prevention, rate limiting, and diagnostics).
+- **Product-analytics data** — to understand how the Service is used and to make informed product decisions, the app sends a defined set of behavioural events to PostHog (our analytics processor). Examples include: signing up, opening a title’s detail page, adding to your watchlist, logging a watch, following another user, and tapping through to a streaming provider. Each event is associated with your Seenit user id and a small set of context fields (the surface the action was taken from, the type of media, your app version, your device platform). We deliberately do not send free-text content (such as your search queries, usernames, email address, or the titles of films and TV shows) — only identifiers and enums. PostHog session-replay is disabled. We process this data on the basis of our legitimate interest in operating, securing, and improving the Service; you have the right to object to this processing at any time by contacting [help@mydus.co.uk](mailto:help@mydus.co.uk).
 - **Crash and error reports** — when the app crashes or encounters a runtime error, we send a crash report to Sentry containing a stack trace and limited contextual information (device model, operating-system version, app version). We have disabled Sentry’s IP-address and session-replay features so these reports do not include screen recordings or your network address. Sentry only receives data when something goes wrong; in normal use, nothing is sent.
 
 ## How we use your data
@@ -44,7 +45,7 @@ We use the information we collect or receive for the following purposes:
 - **To protect our business and our users.** We may use your information as part of our efforts to keep the Service safe and secure, including for abuse prevention, rate limiting, and content moderation. We are legally and contractually obliged to ensure the security of the Service.
 - **To enforce our terms and policies** in order to protect the Service and its users.
 - **To comply with legal and regulatory requirements**, including responding to lawful requests from public authorities.
-- **To improve the Service generally,** primarily by reviewing crash and error reports. We do not currently run any product-analytics tooling that tracks individual user behaviour. If we introduce aggregated, non-identifying analytics in future we will update this Policy before doing so.
+- **To improve the Service generally,** by reviewing crash and error reports and by analysing the product-analytics events described above. We use this to understand which features are being used, where users get stuck, and which parts of the experience need work. We do not use these events for advertising, profiling, automated decision-making, or any third-party sharing beyond the data processors named below. We rely on our legitimate interest as the lawful basis for this processing.
 
 ## Consent
 
@@ -62,6 +63,7 @@ We do not sell your personal data. We share personal data only with the third-pa
 
 - **Supabase, Inc.** — hosts our database, authentication system, and file storage (for avatar images). All account, social-graph, activity, and notification data is stored with Supabase. Supabase’s privacy policy is available at [supabase.com/privacy](https://supabase.com/privacy).
 - **Expo Application Services** (650 Industries, Inc.) — we use Expo to deliver push notifications to your device via APNs and FCM. The Expo push token associated with your account is shared with Expo for this purpose. Expo’s privacy policy is available at [expo.dev/privacy](https://expo.dev/privacy).
+- **PostHog** (PostHog, Inc.) — receives the product-analytics events described above so we can measure how Seenit is used. We use PostHog’s EU-region hosting so that event data is stored in the European Union. PostHog’s privacy policy is available at [posthog.com/privacy](https://posthog.com/privacy).
 - **Apple Push Notification Service** (Apple Inc.) and **Firebase Cloud Messaging** (Google LLC) — receive push messages from Expo and deliver them to your device. Their handling of push data is governed by Apple’s and Google’s respective privacy policies.
 - **Sentry** (Functional Software, Inc.) — receives crash reports and error logs to help us diagnose bugs. Sentry’s privacy policy is available at [sentry.io/privacy](https://sentry.io/privacy/).
 - **The Movie Database (TMDB)** — when you search for a film or TV show in Seenit, your search query is sent to TMDB to return matching titles and poster images. We do not send TMDB any account-identifying information. TMDB’s privacy policy is available at [themoviedb.org/privacy-policy](https://www.themoviedb.org/privacy-policy). _This product uses the TMDB API but is not endorsed or certified by TMDB._
@@ -70,7 +72,7 @@ We may also disclose your personal data where we are required to do so by law, b
 
 ## International transfers
 
-Some of our data processors (notably Supabase, Expo, and Sentry) may process personal data outside the United Kingdom and the European Economic Area. Where this occurs, we rely on appropriate safeguards (such as the UK International Data Transfer Agreement, the EU Standard Contractual Clauses, or an adequacy decision) to ensure your personal data continues to receive an essentially equivalent level of protection.
+Some of our data processors (notably Supabase, Expo, and Sentry) may process personal data outside the United Kingdom and the European Economic Area. PostHog stores our analytics data in its EU region, but its corporate operations and sub-processors may, in limited cases, involve transfers outside the EEA. Where any transfer outside the UK or EEA occurs, we rely on appropriate safeguards (such as the UK International Data Transfer Agreement, the EU Standard Contractual Clauses, or an adequacy decision) to ensure your personal data continues to receive an essentially equivalent level of protection.
 
 ## Retention
 
