@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Seenit Privacy Policy
 
-**Last updated: 26 May 2026**
+**Last updated: 8 July 2026**
 
 ## Introduction
 
@@ -22,7 +22,7 @@ When you use the Service, we collect personal data that you submit to us and per
 
 - **Account data** — information you provide to create and use your Seenit account, including your email address, username, display name, and (optionally) an avatar image.
 - **Social-graph data** — the follow requests you send, the follow requests you accept, and the resulting list of accounts you follow and accounts that follow you.
-- **Activity data** — the films and TV titles you log on Seenit (each log records a reference to the title and the time it was logged).
+- **Activity data** — the films and TV titles you log on Seenit (each log records a reference to the title, whether you marked it as watched or as one you recommend, and the time it was logged), and the titles you add to your watchlist.
 - **Information you provide when you interact with us** — including free-text information you include in support queries, feedback, or any other direct interaction with us.
 
 All personal information that you provide to us must be true, complete and accurate, and you must notify us of any changes to such personal information so that we hold the most up-to-date information about you.
@@ -30,9 +30,18 @@ All personal information that you provide to us must be true, complete and accur
 ### Information automatically collected
 
 - **Push-notification data** — when you grant push permission, we store an Expo push token associated with your account so we can deliver notifications to your device. You can revoke push permission at any time in your device settings.
-- **Server request metadata** — when the Seenit app talks to our backend (Supabase), the network request necessarily carries your IP address, your user-agent string, and the time of the request. Our backend retains this in operational logs for a limited period to operate the Service securely (abuse prevention, rate limiting, and diagnostics).
-- **Product-analytics data** — to understand how the Service is used and to make informed product decisions, the app sends a defined set of behavioural events to PostHog (our analytics processor). Examples include: signing up, opening a title’s detail page, adding to your watchlist, logging a watch, following another user, and tapping through to a streaming provider. Each event is associated with your Seenit user id and a small set of context fields (the surface the action was taken from, the type of media, your app version, your device platform). We deliberately do not send free-text content (such as your search queries, usernames, email address, or the titles of films and TV shows) — only identifiers and enums. PostHog session-replay is disabled. We process this data on the basis of our legitimate interest in operating, securing, and improving the Service; you have the right to object to this processing at any time by contacting [help@mydus.co.uk](mailto:help@mydus.co.uk).
+- **Server request metadata** — when the Seenit app talks to our backend (Supabase), the network request necessarily carries your IP address, your user-agent string, and the time of the request. Our backend retains this in operational logs for a limited period to operate the Service securely (abuse prevention, rate limiting, and diagnostics). We do not use this data to build a behavioural profile of you.
+- **Product-analytics data** — to understand how the Service is used and to make informed product decisions, the app sends a defined set of behavioural events to PostHog (our analytics processor). Examples include: signing up, opening a title’s detail page, adding to your watchlist, logging a watch, following another user, and tapping through to a streaming provider. Each event is associated with your Seenit user id and a small set of context fields (the surface the action was taken from, the type of media, your app version, your device platform). We deliberately do not send free-text content (such as your search queries, your username, or your email address), and titles are referenced by catalogue id rather than by name — only identifiers and enums. PostHog session-replay is disabled. We process this data on the basis of our legitimate interest in operating, securing, and improving the Service; you have the right to object to this processing at any time by contacting [help@mydus.co.uk](mailto:help@mydus.co.uk).
 - **Crash and error reports** — when the app crashes or encounters a runtime error, we send a crash report to Sentry containing a stack trace and limited contextual information (device model, operating-system version, app version). We have disabled Sentry’s IP-address and session-replay features so these reports do not include screen recordings or your network address. Sentry only receives data when something goes wrong; in normal use, nothing is sent.
+
+### Finding friends from your contacts
+
+Seenit offers two optional features to help you connect with people you already know. Both are off by default, are never part of signing up, and run only when you actively choose them. Our legal basis for this processing is your consent, which you give by choosing to use each feature.
+
+- **Matching your contacts.** If you tap “Find friends from your contacts” and grant contacts permission, the app reads the email addresses and phone numbers in your device address book *on your device* and converts each one into an irreversible cryptographic code (a SHA-256 hash). Only these anonymous codes are sent to our server, where they are compared against the codes of existing members. The names, raw email addresses, and raw phone numbers of your contacts never leave your device and are never stored by us. Codes that do not match a member are discarded immediately — we do not create records for, or build profiles of, people who are not Seenit users.
+- **Letting friends find you.** If you choose “Let friends find you” and verify your mobile number with an SMS one-time code, we store an irreversible code (a SHA-256 hash) derived from your number, so that a friend using the matching feature above can find you. Your verified number is held as part of your account authentication data (with Supabase), and the matching code is held in a record that only you can read. Your number is never shown to other users, never used for advertising or marketing, and never shared with third parties for their own purposes.
+
+These matching codes are one-way: we cannot recover your original email address or phone number from them. In the interest of transparency, a code derived from a phone number could in principle be tested against a guessed number; the real protection is that the code records are access-restricted so they cannot be read in bulk, and every matching request is authenticated and rate-limited. Providing a phone number to be findable is entirely optional — Seenit never requires one to create an account. You can ask us to stop making you discoverable at any time by emailing [help@mydus.co.uk](mailto:help@mydus.co.uk), and your matching codes are deleted when you delete your account.
 
 ## How we use your data
 
@@ -49,11 +58,13 @@ We use the information we collect or receive for the following purposes:
 
 ## Consent
 
-Where we rely on your consent (for example, push notifications), you may withdraw it at any time. You can disable push notifications in your device settings, or contact us at [help@mydus.co.uk](mailto:help@mydus.co.uk) to withdraw consent for any other consent-based processing.
+Where we rely on your consent (for example, push notifications and the contact-matching features described above), you may withdraw it at any time. You can disable push notifications in your device settings, or contact us at [help@mydus.co.uk](mailto:help@mydus.co.uk) to withdraw consent for any other consent-based processing.
 
 ### Deletion of personal data
 
-You can delete your Seenit account at any time from the **Profile → Delete account** option within the app. When you do this we will permanently delete your profile, your follow relationships (in both directions), your logs, your notifications, and your stored avatar image. Backups containing residual personal data will be purged on our normal backup-retention cycle, and in any event within 30 days of your deletion request.
+You can delete your Seenit account at any time from the **Profile → Delete account** option within the app. When you do this we will permanently delete your profile, your follow relationships (in both directions), your logs, your notifications, your stored avatar image, and your contact-matching codes (including any code derived from your phone number). Backups containing residual personal data will be purged on our normal backup-retention cycle, and in any event within 30 days of your deletion request.
+
+Product-analytics events are keyed to a random identifier rather than your name or email address, so once your account is deleted we can no longer connect them to you. If you would like those events erased outright, say so in your deletion request (or email us afterwards) and we will remove them from our analytics processor as well.
 
 You can also request deletion by emailing [help@mydus.co.uk](mailto:help@mydus.co.uk).
 

@@ -6,7 +6,7 @@ permalink: /terms/
 
 # Seenit Terms & Conditions
 
-**Last updated: 20 May 2026**
+**Last updated: 8 July 2026**
 
 ## 1. Our Agreement
 
@@ -20,11 +20,11 @@ permalink: /terms/
 
 ## 2. The Service
 
-2.1  Seenit is a social application that lets you log films and television shows you have watched and would recommend, share those logs with people you follow on Seenit, and discover who in your network has watched the same titles. The Service does not include ratings, written reviews, or watchlists.
+2.1  Seenit is a social application that lets you log films and television shows you have watched, mark the ones you would recommend, keep a watchlist of titles you want to watch, share that activity with people you follow on Seenit, and discover who in your network has watched the same titles. The Service does not include ratings or written reviews.
 
 2.2  By using the Service, you warrant that you are at least 17 years old. If you are under the age of majority in your jurisdiction, you confirm that your parent or legal guardian has reviewed and agreed to these Terms on your behalf.
 
-2.3  Film and TV metadata (titles, posters, release years, overviews, genres) is provided by The Movie Database (TMDB). Seenit uses the TMDB API but is not endorsed or certified by TMDB. TMDB metadata remains the property of TMDB and its licensors.
+2.3  Film and TV metadata (titles, posters, release years, overviews, genres) is provided by The Movie Database (TMDB). Seenit uses the TMDB API but is not endorsed or certified by TMDB. TMDB metadata remains the property of TMDB and its licensors. Streaming-availability information shown on titles is provided by JustWatch and supplied to Seenit through the TMDB API.
 
 2.4  You acknowledge and agree that the Service is provided for personal, non-commercial use.
 
@@ -38,7 +38,7 @@ permalink: /terms/
 
 4.1  To use the Service, you must create an account by verifying your email address. You choose a username and display name. You must not impersonate another person, organisation, or brand, and you must not select a username that is offensive, misleading, or that infringes a third party’s rights.
 
-4.2  When you log a film or TV title on Seenit, you are making a positive recommendation of that title. Your logs are visible to:
+4.2  When you log a film or TV title on Seenit, you record that you have watched it and may, optionally, mark it as one you recommend. Your logs and watchlist additions are visible to:
 
 - yourself, on your own profile;
 - accounts that follow you (and whose follow request you have accepted);
